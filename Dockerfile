@@ -20,5 +20,4 @@ USER nonrootuser
 EXPOSE 8080
 
 # Command to run simple HTTP server on port 8080
-CMD ["python3", "-m", "http.server", "8080"]
-
+CMD ["python3", "-m", "http.server", "--bind", "::", "8080"]

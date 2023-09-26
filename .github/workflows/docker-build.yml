@@ -4,7 +4,9 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main # or your default branch
+      - main
+  schedule:
+    - cron: '0 4 * * *'
 
 jobs:
   build:

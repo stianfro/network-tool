@@ -1,4 +1,3 @@
-
 name: Build and Push Docker Image
 
 on:
@@ -32,4 +31,4 @@ jobs:
         context: .
         push: true
         tags: stianfro/network-tool:latest
-
+        platforms: linux/amd64,linux/arm64

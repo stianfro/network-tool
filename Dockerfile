@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 # Install required packages
-RUN apk add --no-cache tcpdump arping python3 curl
+RUN apk add --no-cache tcpdump arping python3 curl iputils-tracepath
 
 # Create unprivileged user with uid > 1000
 RUN adduser -D -u 2000 nonrootuser

@@ -1,5 +1,5 @@
 # Use Alpine as base image
-FROM alpine:3.23@sha256:51183f2cfa6320055da30872f211093f9ff1d3cf06f39a0bdb212314c5dc7375
+FROM alpine:3.21@sha256:5405e8f36ce1878720f71217d664aa3dea32e5e5df11acbf07fc78ef5661465b
 
 # Install required packages
 RUN apk add --no-cache tcpdump arping python3 curl iputils-tracepath traceroute net-tools iproute2 bind-tools netcat-openbsd
